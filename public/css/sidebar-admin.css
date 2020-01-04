@@ -20,8 +20,8 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 300px;
+    max-width: 300px;
     color: #fff;
     position: fixed;
     top: 0;
@@ -46,14 +46,15 @@ a, a:hover, a:focus {
 #sidebar ul p {
     color: #fff;
     padding: 10px;
-}
-
-#sidebar ul{
     margin-left: 15px;
 }
 
+/* #sidebar ul{
+    margin-left: 15px;
+} */
+
 #sidebar ul li a {
-    padding: 10px;
+    padding: 12px 26px;
     font-size: 1.1em;
     display: block;
     color: white;

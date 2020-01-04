@@ -1,0 +1,32 @@
+/* css style sheet for nav-admin */
+
+
+
+/* navbar start */
+
+.nav-admin{
+    background-color: #00cec9;
+    margin-left:300px;
+    z-index: 2;
+}
+
+.navbar .navbar-brand{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.navbar .navbar-nav{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link{
+    padding: 15px;
+    color: white;
+}
+
+/* navbar end */
+
+

@@ -18,12 +18,20 @@
                 <a class="nav-link" href="/about">About</a>
             </li>
             {{!-- if the user is signed in those links must not be appeared --}}
+            {{#if user}}
+            <li class="nav-item">
+                <a class="nav-link" href="/signout">Sign-out</a>
+            </li>
+            {{else}}
             <li class="nav-item">
                 <a class="nav-link" href="/signup">Sign-up</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/signin">Sign-in</a>
             </li>
+            {{/if}}
+
+
         </ul>
     </nav>
 </div>
