@@ -1,12 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Travel Consultant</title>
+    <title>Admin</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -21,36 +19,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     {{!-- Custom styles for this page --}}
-    <link rel="stylesheet" href="/css/home.css">
+    {{!-- <link rel="stylesheet" href="/css/home.css"> --}}
 
 
 </head>
-
 <body>
-    <!-- Navbar start -->
-    {{> home/nav-home }}
-    <!-- Navbar end -->
-    <div class="container">
-        {{!-- showing flash messages --}}
-        {{> home/form-msgs }}
-        {{!-- lopping through errors --}}
-        {{#if errors}}
-        {{#each errors}}
-        <div style="margin-top: 10px;" class="alert alert-danger">
-            {{message}}
-        </div>
-        {{/each}}
-        {{/if}}
 
-        {{!-- body start --}}
-        {{{ body }}}
-        {{!-- body end --}}
+    {{!-- Sidebar start --}}
+    {{> admin/sidebar-admin }}
+    {{!-- Sidebar end --}}
+    
+    {{!-- body --}}
+    <div class="container">
 
     </div>
+    
 
 
-    <!-- Footer start -->
-    <!-- Footer end -->
 </body>
-
 </html>

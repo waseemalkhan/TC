@@ -21,6 +21,12 @@ const passport = require('passport');
 // require passport - local strategy
 const localStrategy = require('passport-local').Strategy;
 
+// override the default layout
+router.all('/*' , (req , res , next) => {
+    req.app.locals.layout = 'home';
+    next();
+});
+
 
 /**
  *
