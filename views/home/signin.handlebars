@@ -1,0 +1,25 @@
+{{!-- Custom styles for this page --}}
+<link rel="stylesheet" href="/css/signin.css">
+
+{{!-- Sign-in --}}
+<div class="container">
+    {{!-- header --}}
+    <h2>Sign in!</h2>
+    {{!-- form --}}
+    <form action="/signin" method="POST">
+        {{!-- username --}}
+        <div class="form-group">
+            <label for="username">Username : </label>
+            <input type="text" name="username" class="form-control" placeholder="Enter your username">
+        </div>
+
+        {{!-- password --}}
+        <div class="form-group">
+            <label for="password">Password : </label>
+            <input type="password" name="password" class="form-control" placeholder="Enter your password">
+        </div>
+
+        {{!-- submit button --}}
+        <button type="submit" class="btn btn-block">Sign in</button>
+    </form>
+</div>

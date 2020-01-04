@@ -1,0 +1,29 @@
+{{!-- Custom styles for this page --}}
+<link rel="stylesheet" href="/css/nav-home.css">
+
+<!-- navbar -->
+<div class="nav-home">
+    <nav class="navbar navbar-expand-sm">
+        {{!-- brand --}}
+        <a class="navbar-brand" href="#">Travel Consultant</a>
+        {{!-- links --}}
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Travels List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            {{!-- if the user is signed in those links must not be appeared --}}
+            <li class="nav-item">
+                <a class="nav-link" href="/signup">Sign-up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/signin">Sign-in</a>
+            </li>
+        </ul>
+    </nav>
+</div>

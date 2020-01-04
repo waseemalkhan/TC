@@ -1,0 +1,80 @@
+{{!-- Custom styles for this page --}}
+<link rel="stylesheet" href="/css/signup.css">
+
+{{!-- sign-up --}}
+<div class="container">
+    {{!-- header --}}
+    <h2>Sign up!</h2>
+    {{!-- form --}}
+    <form action="/signup" method="POST">
+
+        {{!-- full name --}}
+        <div class="form-group">
+            <label for="fullName">Full name : </label>
+            <input type="text" class="form-control" name="fullName" placeholder="Enter your full name">
+        </div>
+
+        {{!-- username --}}
+        <div class="form-group">
+            <label for="username">Username : </label>
+            <input type="text" class="form-control" name="username" placeholder="Enter your username">
+        </div>
+
+
+        {{!-- email --}}
+        <div class="form-group">
+            <label for="email">E-mail : </label>
+            <input type="email" class="form-control" name="email" placeholder="Enter your E-mail">
+        </div>
+
+        {{!-- gender --}}
+        <div class="form-group">
+            <label for="gender">Gender : </label>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" value="male" class="form-check-input" name="gender">Male
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" value="female" class="form-check-input" name="gender">Female
+                </label>
+            </div>
+        </div>
+
+
+
+        {{!-- country --}}
+        <div class="form-group">
+            <p>Country : </p>
+            <select class="form-control" name="country">
+                <option value="syria">Syria</option>
+                <option value="us">The United States</option>
+                <option value="uk">The United Kingdom</option>
+                <option value="france">France</option>
+            </select>
+        </div>
+
+
+        {{!-- password --}}
+        <div class="form-group">
+            <label for="password">Password : </label>
+            <input type="password" class="form-control" name="password" placeholder="Enter your password">
+        </div>
+
+        {{!-- confirmation password --}}
+        <div class="form-group">
+            <label for="conpassword">Re-enter password : </label>
+            <input type="password" class="form-control" name="conpassword" placeholder="Re-enter your password">
+        </div>
+
+
+        {{!-- submit button --}}
+        <button type="submit" class="btn btn-block">Sign up</button>
+
+    </form>
+    <div class="text-center">
+        <a id="gotoSignin" class="d-block small mt-3" href="/signin">Sign-in Page</a>
+    </div>
+
+</div>

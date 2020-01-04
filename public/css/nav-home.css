@@ -1,0 +1,30 @@
+/* css style sheet for navbar */
+
+
+
+
+/* navbar start */
+
+.nav-home{
+    background-color: #00cec9;
+}
+
+.navbar .navbar-brand{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.navbar .navbar-nav{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.navbar .navbar-nav .nav-link{
+    padding: 15px;
+    color: white;
+}
+
+/* navbar end */
+
+

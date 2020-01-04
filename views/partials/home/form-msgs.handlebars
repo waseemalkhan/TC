@@ -1,0 +1,25 @@
+{{!-- form messages partial --}}
+{{#if success_message}}
+
+    <div style="margin-top: 10px;" class="alert alert-success">
+        {{ success_message }}
+    </div>
+
+{{/if}}
+
+{{#if error}}
+
+    <div style="margin-top: 10px;" class="alert alert-danger">
+        {{ error }}
+    </div>
+
+{{/if}}
+
+{{!-- 
+{{#if error_message}}
+
+    <div class="alert alert-danger">
+        {{ error_message }}
+    </div>
+
+{{/if}} --}}
