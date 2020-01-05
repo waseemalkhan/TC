@@ -4,16 +4,48 @@
 {{!-- create a new travel plan from page --}}
 <div class="container">
 
+    <h2>Add a new Travel Plan!</h2>
+
     <form action="/admin/create" method="POST">
+
         {{!-- the travel plan name --}}
         <div class="form-group">
-            <label for="travelplanName">Travel Plan name : </label>
-            <input type="text" class="form-control" name="travelplanName" placeholder="Enter the travel plan's name">
+            <label for="travelName">Travel Plan name : </label>
+            <input type="text" class="form-control" name="travelName" placeholder="Enter the travel plan's name">
         </div>
 
+        {{!-- the travel destination --}}
+        <div class="form-group">
+            <label for="travelDestination">Destination : </label>
+            <input type="text" class="form-control" name="travelDestination" placeholder="Enter the travel plan's destination">
+        </div>
 
+        {{!-- the travel plan summary --}}
+        <div class="form-group">
+            <label for="travelSummary">Summary : </label>
+            <input type="text" class="form-control" name="travelSummary" placeholder="Enter a summary about the travel plan">
+        </div>
+
+        {{!-- date --}}
+        <div class="form-group">
+            <label for="travelDate">Date : </label>
+            <input type="date" class="form-control" name="travelDate">
+        </div>
+
+        {{!-- duration --}}
+        <div class="form-group">
+            <label for="travelDuration">Duration (per days): </label>
+            <input type="number" class="form-control" name="travelDuration" value="0">
+        </div>
+
+        {{!-- cost --}}
+        <div class="form-group">
+            <label for="travelCost">Cost (US Dollars) : </label>
+            <input type="number" class="form-control" name="travelCost" value="100">
+        </div>
+     
         {{!-- submit button --}}
-        <button type="submit" class="btn"></button>
+        <button type="submit" class="btn"> Add and Save </button>
     </form>
 
 
