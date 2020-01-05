@@ -27,6 +27,14 @@ router.get('/' , (req , res) => {
     res.render('admin/index');
 });
 
+/** 
+ * 
+ *  To create a new travel plan, this page will have a form to create a new travel plan
+ * 
+ */
+router.get('/create' , (req ,res) => {
+    res.render('admin/create');
+});
 
 
 // export the router 

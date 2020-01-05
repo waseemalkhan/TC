@@ -1,0 +1,12 @@
+/* css style sheet for admin page */
+
+.container{
+    font-size: 20px;
+}
+
+.btn{
+    margin-top: 50px;
+    margin-left: 50px;
+    color: white !important;
+    background-color: #00cec9;
+}

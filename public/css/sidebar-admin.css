@@ -27,7 +27,6 @@ a, a:hover, a:focus {
     top: 0;
     left: 0;
     height: 100vh;
-    z-index: 999;
     background: #00cec9;
     color: #fff;
     transition: all 0.3s;
