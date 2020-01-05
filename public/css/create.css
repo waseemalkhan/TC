@@ -1,0 +1,28 @@
+/* css style sheet for create a new travel plan page */
+
+/* container start */
+
+.container{
+    font-family: 'Raleway' , sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+/* container end */
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    margin: 30px;
+}
+
+.container form button{
+    background-color: #00cec9;
+    color: white;
+}
+
+.container form button:hover{
+    background-color: #08dfdb;
+    color: white;
+}

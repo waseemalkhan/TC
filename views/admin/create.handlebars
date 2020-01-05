@@ -1,0 +1,20 @@
+{{!-- Cutome style sheet for this page --}}
+<link rel="stylesheet" href="/css/create.css">
+
+{{!-- create a new travel plan from page --}}
+<div class="container">
+
+    <form action="/admin/create" method="POST">
+        {{!-- the travel plan name --}}
+        <div class="form-group">
+            <label for="travelplanName">Travel Plan name : </label>
+            <input type="text" class="form-control" name="travelplanName" placeholder="Enter the travel plan's name">
+        </div>
+
+
+        {{!-- submit button --}}
+        <button type="submit" class="btn"></button>
+    </form>
+
+
+</div>
